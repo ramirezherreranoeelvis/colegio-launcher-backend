@@ -1,0 +1,6 @@
+[submodule "colegio-auth-ms"]
+	path = colegio-auth-ms
+	url = https://github.com/ramirezherreranoeelvis/colegio-auth-ms
+[submodule "colegio-cursos-ms"]
+	path = colegio-cursos-ms
+	url = https://github.com/ramirezherreranoeelvis/colegio-cursos-ms
