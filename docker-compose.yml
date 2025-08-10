@@ -82,7 +82,7 @@ services:
       context: ./colegio-auth-ms/
       dockerfile: Dockerfile
     ports:
-      - "8090:8080"
+      - "8000:8000"
     networks:
       - colegio-network
     # AÑADIDO: El microservicio esperará a que Kafka y MySQL estén saludables.
