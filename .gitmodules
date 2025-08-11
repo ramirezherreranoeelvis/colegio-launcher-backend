@@ -4,3 +4,6 @@
 [submodule "colegio-cursos-ms"]
 	path = colegio-cursos-ms
 	url = https://github.com/ramirezherreranoeelvis/colegio-cursos-ms
+[submodule "colegio-enrollment-ms"]
+	path = colegio-enrollment-ms
+	url = https://github.com/ramirezherreranoeelvis/colegio-enrollment-ms
