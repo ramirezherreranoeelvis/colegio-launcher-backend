@@ -103,6 +103,26 @@ services:
             KAFKA_HOST: kafka:29092
             PORT: 8010
             MYSQL_HOST: mysql:3390
+    colegio-courses-ms:
+        container_name: colegio-courses-ms
+        image: colegio-courses-ms
+        build:
+            context: ./colegio-cursos-ms/
+            dockerfile: Dockerfile
+        ports:
+            - "8020:8020"
+        networks:
+            - colegio-network
+        depends_on:
+            kafka:
+                condition: service_healthy
+            mysql:
+                condition: service_healthy
+        environment:
+            KAFKA_HOST: kafka:29092
+            PORT: 8020
+            MYSQL_HOST: mysql:3390
+
 networks:
     colegio-network:
         driver: bridge
